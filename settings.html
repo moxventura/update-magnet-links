@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Update magnet links</title>
+  <style>
+    .main {
+      width: 250px;
+      margin: 5px;
+      margin-right: 10px;
+    }
+    label {
+      display: block;
+      margin-bottom: 5px;
+    }
+    input, textarea {
+      width: 100%;
+      margin: 5px;
+    }
+    .error-border {
+      border-color: red;
+    }
+  </style>
+  <script src="settings.js"></script>
+</head>
+<body>
+  <h1>Update magnet links</h1>
+  <p> Clear cached trackerlist </p>
+  <button id="clearButton">Clear cache</button>
+  <br />
+  <p>Enter a custom url or a custom tracker list. The trackers should be newline separated.</p>
+  <div class="main">
+    <label for="customUrl">Custom tracker URL:</label>
+    <input type="text" id="customUrl" placeholder="Enter a URL">
+    <label for="customTrackers">Custom Trackers:</label>
+    <textarea id="customTrackers" placeholder="Enter a tracker list"></textarea>
+    <br />
+    <button id="saveButton">Save</button>
+  </div>  
+</body>
+</html>

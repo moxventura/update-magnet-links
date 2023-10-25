@@ -1,0 +1,24 @@
+{
+  "manifest_version": 3,
+  "name": "Update magnet links",
+  "description": "This addon will add recent trackers to magnet links",
+  "version": "1.0",
+  "author": "moxventura",
+  "homepage_url": "https://github.com/moxventura/update-magnet-links",
+  "options_page": "settings.html",
+  "icons": {
+    "512": "icon512.png"
+  },
+  "action": {
+    "default_popup": "settings.html"
+  },
+  "content_scripts": [
+      {
+        "js": ["content.js"],
+        "matches": ["<all_urls>"]
+      }
+    ],
+    "permissions": [
+      "storage"
+    ]
+}
